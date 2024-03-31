@@ -1,0 +1,22 @@
+.heading{
+    font-size: $text-3xl;
+    font-weight: $font-medium;
+    color: $purple-500;
+    line-height: 40px ;
+}
+
+@media (max-width: $xl){
+    .heading{
+        font-size: $text-2xl;
+        line-height: 32px;
+
+    }
+}
+
+@media (max-width: $md){
+    .heading{
+        font-size: $text-xl;
+        line-height: 26px;
+
+    }
+}

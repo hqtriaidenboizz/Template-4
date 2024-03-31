@@ -1,0 +1,740 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./Styles/Css/app.css">
+    <title>Skillfy</title>
+</head>
+
+<body>
+    <div class="wrapper">
+        <header class="header">
+            <div class="container">
+                <div class="header-container">
+                    <div class="header-logo">
+                        <img src="./Assets/images/global/brand-logo.png" alt="Brand logo">
+                    </div>
+
+                    <div class="header-middle" id="header-middle">
+                        <div class="header-middle-container">
+                            <div class="top-menu-mobile">
+                                <div class="header-logo">
+                                    <img src="./Assets/images/global/brand-logo.png" alt="Brand logo">
+                                </div>
+                                <button class="button" onclick="toggleNavbar('close')">
+                                    <i data-lucide="x"></i>
+                                </button>
+                            </div>
+
+                            <div class="menu-item">
+                                <div class="item-name">
+                                    Home
+                                </div>
+                                <i data-lucide="chevron-down" class="icon"></i>
+                            </div>
+                            <div class="menu-item">
+                                <div class="item-name">
+                                    Pages
+                                </div>
+                                <i data-lucide="chevron-down" class="icon"></i>
+                            </div>
+                            <div class="menu-item">
+                                <div class="item-name">
+                                    Courses
+                                </div>
+                                <i data-lucide="chevron-down" class="icon"></i>
+                            </div>
+                            <div class="menu-item">
+                                <div class="item-name">
+                                    Features
+                                </div>
+                                <i data-lucide="chevron-down" class="icon"></i>
+                            </div>
+                            <div class="menu-item">
+                                <div class="item-name">
+                                    Blog
+                                </div>
+                                <i data-lucide="chevron-down" class="icon"></i>
+                            </div>
+                            <div class="menu-item">
+                                <div class="item-name">
+                                    Shop
+                                </div>
+                                <i data-lucide="chevron-down" class="icon"></i>
+                            </div>
+
+                            <div class="menu-button">
+                                <i data-lucide="shopping-cart" class="icon"></i>
+                                <button class="button button-primary">
+                                    Register
+                                </button>
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <div class="header-right">
+                        <i data-lucide="search" class="icon"></i>
+                        <i data-lucide="shopping-cart" class="icon"></i>
+                        <button class="button button-primary">
+                            Register
+                        </button>
+                    </div>
+
+                    <div class="header-right-mobile">
+                        <i data-lucide="search" class="icon"></i>
+                        <button class="button" onclick="toggleNavbar('open')">
+                            <i data-lucide="menu" class="icon"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <main class="main">
+            <section class="introduction">
+                <div class="container">
+
+                    <div class="introduction-left">
+                        <div class="background">
+                            <img src="./Assets/images/global/circle.svg" alt="circle" class="circle">
+                        </div>
+                        <h1><span>Skillfy</span> is the one stop for all students</h1>
+                        <p>Get here study material for all classes, entrance exams, and competitive exam and latest
+                            education news.</p>
+                        <button class="button button-primary">
+                            Enroll Now
+                        </button>
+                        <div class="social-media-share">
+                            <button class="button">
+                                Share Now
+                            </button>
+                            <div class="social-media">
+                                <div class="social-media__item active">
+                                    Tw
+                                </div>
+                                <div class="social-media__item">
+                                    Fb
+                                </div>
+                                <div class="social-media__item">
+                                    Be
+                                </div>
+                                <div class="social-media__item">
+                                    In
+                                </div>
+                                <div class="social-media__item">
+                                    Db
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="introduction-right">
+                        <div class="image">
+                            <img src="./Assets/images/other/banner-introduction.jpg" alt="Online learning">
+                        </div>
+                        <div class="background">
+                            <img src="./Assets/images/global/circle.svg" alt="circle" class="circle-right">
+
+                            <img src="./Assets/images/global/dot-circle-left.svg" alt="dot circle left"
+                                class="dot-circle-left">
+                            <img src="./Assets/images/global/dot-circle-right.svg" alt="dot circle right"
+                                class="dot-circle-right">
+
+                        </div>
+                    </div>
+                </div>
+
+            </section>
+
+            <section class="goals">
+                <div class="container">
+                    <h2 class="heading">Achieve your goals with Skillfy</h2>
+                    <div class="card-goals">
+                        <div class="card-goal">
+                            <div class="card-goal__icon idea">
+                                <i data-lucide="lightbulb"></i>
+                            </div>
+                            <div class="card-goal__title">
+                                Learn the latest skills
+                            </div>
+                            <div class="card-goal__discription">
+                                Start streaming on-demand video lectures today from top instructors in subjects...
+                            </div>
+
+                        </div>
+                        <div class="card-goal">
+                            <div class="card-goal__icon improve">
+                                <i data-lucide="trending-up"></i>
+                            </div>
+                            <div class="card-goal__title">
+                                Learn the latest skills
+                            </div>
+                            <div class="card-goal__discription">
+                                Start streaming on-demand video lectures today from top instructors in subjects...
+                            </div>
+
+                        </div>
+                        <div class="card-goal">
+                            <div class="card-goal__icon medal">
+                                <i data-lucide="medal"></i>
+                            </div>
+                            <div class="card-goal__title">
+                                Learn the latest skills
+                            </div>
+                            <div class="card-goal__discription">
+                                Start streaming on-demand video lectures today from top instructors in subjects...
+                            </div>
+
+                        </div>
+
+                    </div>
+                </div>
+
+            </section>
+
+            <section class="learner-outcomes">
+                <div class="container">
+                    <div class="learner-outcomes-left">
+                        <h2 class="heading">
+                            Learner outcomes on Skillfy
+                            </h1>
+                            <p class="section-discription">87% of people learning for professional developement report
+                                career benefits like geting a
+                                promotion, a raise or staring a new career</p>
+                            <div class="outcome">
+                                <i data-lucide="square-check" class="icon"></i>
+                                <p>
+                                    Top intructors from around world
+                                </p>
+                            </div>
+                            <div class="outcome">
+                                <i data-lucide="square-check" class="icon"></i>
+                                <p>
+                                    Top courses for your team
+                                </p>
+                            </div>
+                            <button class="button button-primary">
+                                Start learning now
+                            </button>
+                    </div>
+                    <div class="learner-outcomes-right">
+                        <div class="background">
+                            <img src="./Assets/images/global/dot.svg" alt="Dot" class="dot-left">
+                            <img src="./Assets/images/global/dot.svg" alt="Dot" class="dot-right">
+                        </div>
+                        <div class="right-image">
+                            <img src="./Assets/images/other/banner-outcome.jpg" alt="Teamwork" class="image">
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </section>
+
+            <section class="courses">
+                <div class="container">
+                    <div class="courses-header">
+                        <h2 class="heading">
+                            Get choice of your courses
+                        </h2>
+                        <div class="courses-header__actions">
+                            <button class="button category">
+                                <span>
+                                    Design
+                                </span>
+                                <i data-lucide="chevron-down"></i>
+                            </button>
+                            <button class="button button-primary">
+                                View all
+                            </button>
+                        </div>
+                    </div>
+                    <div class="courses-cart">
+                        <div class="course-cart">
+                            <div class="course-cart-top">
+                                <div class="course-cart__image">
+                                    <img src="/Assets/images/other/cart1.jpg" alt="Course image">
+                                </div>
+                                <div class="course-cart__statistics">
+                                    <div class="rating statistic">
+                                        <i data-lucide="star" class="icon"></i>
+                                        <span>(4,5) 120</span>
+                                    </div>
+                                    <div class="view statistic">
+                                        <i data-lucide="eye" class="icon"></i>
+                                        <span>12,000</span>
+                                    </div>
+                                    <div class="lesion statistic">
+                                        <i data-lucide="circle-play" class="icon"></i>
+                                        <span>36 lesion</span>
+                                    </div>
+
+                                </div>
+                            </div>
+                            <div class="course-cart-bottom">
+                                <div class="course-cart__title">
+                                    Everything You need to know About Business
+                                </div>
+                                <div class="course-cart__information">
+                                    <div class="author">
+                                        <img src="/Assets/images/other/avatar-author.jpg" alt="Avavta author"
+                                            width="100">
+                                        <span>Nicole Brow</span>
+                                    </div>
+                                    <div class="price">
+                                        <span class="old-price">$99.99</span>
+                                        <span class="current-price ">$48.57</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="course-cart">
+                            <div class="course-cart-top">
+                                <div class="course-cart__image">
+                                    <img src="/Assets/images/other/cart2.jpg" alt="Course image">
+                                </div>
+                                <div class="course-cart__statistics">
+                                    <div class="rating statistic">
+                                        <i data-lucide="star" class="icon"></i>
+                                        <span>(4,5) 120</span>
+                                    </div>
+                                    <div class="view statistic">
+                                        <i data-lucide="eye" class="icon"></i>
+                                        <span>12,000</span>
+                                    </div>
+                                    <div class="lesion statistic">
+                                        <i data-lucide="circle-play" class="icon"></i>
+                                        <span>36 lesion</span>
+                                    </div>
+
+                                </div>
+                            </div>
+                            <div class="course-cart-bottom">
+                                <div class="course-cart__title">
+                                    Everything You need to know About Business
+                                </div>
+                                <div class="course-cart__information">
+                                    <div class="author">
+                                        <img src="/Assets/images/other/avatar-author.jpg" alt="Avavta author"
+                                            width="100">
+                                        <span>Nicole Brow</span>
+                                    </div>
+                                    <div class="price">
+                                        <span class="old-price">$99.99</span>
+                                        <span class="current-price ">$48.57</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="course-cart">
+                            <div class="course-cart-top">
+                                <div class="course-cart__image">
+                                    <img src="/Assets/images/other/cart3.jpg" alt="Course image">
+                                </div>
+                                <div class="course-cart__statistics">
+                                    <div class="rating statistic">
+                                        <i data-lucide="star" class="icon"></i>
+                                        <span>(4,5) 120</span>
+                                    </div>
+                                    <div class="view statistic">
+                                        <i data-lucide="eye" class="icon"></i>
+                                        <span>12,000</span>
+                                    </div>
+                                    <div class="lesion statistic">
+                                        <i data-lucide="circle-play" class="icon"></i>
+                                        <span>36 lesion</span>
+                                    </div>
+
+                                </div>
+                            </div>
+                            <div class="course-cart-bottom">
+                                <div class="course-cart__title">
+                                    Everything You need to know About Business
+                                </div>
+                                <div class="course-cart__information">
+                                    <div class="author">
+                                        <img src="/Assets/images/other/avatar-author.jpg" alt="Avavta author"
+                                            width="100">
+                                        <span>Nicole Brow</span>
+                                    </div>
+                                    <div class="price">
+                                        <span class="old-price">$99.99</span>
+                                        <span class="current-price ">$48.57</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="course-cart">
+                            <div class="course-cart-top">
+                                <div class="course-cart__image">
+                                    <img src="/Assets/images/other/cart4.jpg" alt="Course image">
+                                </div>
+                                <div class="course-cart__statistics">
+                                    <div class="rating statistic">
+                                        <i data-lucide="star" class="icon"></i>
+                                        <span>(4,5) 120</span>
+                                    </div>
+                                    <div class="view statistic">
+                                        <i data-lucide="eye" class="icon"></i>
+                                        <span>12,000</span>
+                                    </div>
+                                    <div class="lesion statistic">
+                                        <i data-lucide="circle-play" class="icon"></i>
+                                        <span>36 lesion</span>
+                                    </div>
+
+                                </div>
+                            </div>
+                            <div class="course-cart-bottom">
+                                <div class="course-cart__title">
+                                    Everything You need to know About Business
+                                </div>
+                                <div class="course-cart__information">
+                                    <div class="author">
+                                        <img src="/Assets/images/other/avatar-author.jpg" alt="Avavta author"
+                                            width="100">
+                                        <span>Nicole Brow</span>
+                                    </div>
+                                    <div class="price">
+                                        <span class="old-price">$99.99</span>
+                                        <span class="current-price ">$48.57</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="course-cart">
+                            <div class="course-cart-top">
+                                <div class="course-cart__image">
+                                    <img src="/Assets/images/other/cart5.jpg" alt="Course image">
+                                </div>
+                                <div class="course-cart__statistics">
+                                    <div class="rating statistic">
+                                        <i data-lucide="star" class="icon"></i>
+                                        <span>(4,5) 120</span>
+                                    </div>
+                                    <div class="view statistic">
+                                        <i data-lucide="eye" class="icon"></i>
+                                        <span>12,000</span>
+                                    </div>
+                                    <div class="lesion statistic">
+                                        <i data-lucide="circle-play" class="icon"></i>
+                                        <span>36 lesion</span>
+                                    </div>
+
+                                </div>
+                            </div>
+                            <div class="course-cart-bottom">
+                                <div class="course-cart__title">
+                                    Everything You need to know About Business
+                                </div>
+                                <div class="course-cart__information">
+                                    <div class="author">
+                                        <img src="/Assets/images/other/avatar-author.jpg" alt="Avavta author"
+                                            width="100">
+                                        <span>Nicole Brow</span>
+                                    </div>
+                                    <div class="price">
+                                        <span class="old-price">$99.99</span>
+                                        <span class="current-price ">$48.57</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="course-cart">
+                            <div class="course-cart-top">
+                                <div class="course-cart__image">
+                                    <img src="/Assets/images/other/cart6.jpg" alt="Course image">
+                                </div>
+                                <div class="course-cart__statistics">
+                                    <div class="rating statistic">
+                                        <i data-lucide="star" class="icon"></i>
+                                        <span>(4,5) 120</span>
+                                    </div>
+                                    <div class="view statistic">
+                                        <i data-lucide="eye" class="icon"></i>
+                                        <span>12,000</span>
+                                    </div>
+                                    <div class="lesion statistic">
+                                        <i data-lucide="circle-play" class="icon"></i>
+                                        <span>36 lesion</span>
+                                    </div>
+
+                                </div>
+                            </div>
+                            <div class="course-cart-bottom">
+                                <div class="course-cart__title">
+                                    Everything You need to know About Business
+                                </div>
+                                <div class="course-cart__information">
+                                    <div class="author">
+                                        <img src="/Assets/images/other/avatar-author.jpg" alt="Avavta author"
+                                            width="100">
+                                        <span>Nicole Brow</span>
+                                    </div>
+                                    <div class="price">
+                                        <span class="old-price">$99.99</span>
+                                        <span class="current-price ">$48.57</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="learn-leading">
+                <div class="container">
+                    <div class="learn-leading-left">
+                        <h2 class="heading">
+                            Learn from leading universities and companies
+                        </h2>
+                        <p class="section-discription">
+                            Start streaming on-demand video lectures today from top intructors in subjects like
+                            business, computer science, data science, language leaning, & more
+                        </p>
+                        <button class="button button-primary">
+                            Star learning now
+                        </button>
+                    </div>
+                    <div class="learn-leading-right">
+                        <div class="video">
+                            <div class="button-play">
+                            </div>
+                            <img src="./Assets/images/other/banner-leading.jpg" alt="Brand leading">
+                        </div>
+                        <img src="./Assets/images/global/dot.svg" alt="Dot" class="dot">
+                    </div>
+                </div>
+                <div class="background">
+                </div>
+            </section>
+
+            <section class="largest-courses">
+                <div class="container">
+                    <div class="largest-courses-header">
+                        <h2 class="heading">
+                            The world's largest selection of courses
+                        </h2>
+                        <div class="courses-header__actions">
+                            <button class="button category">
+                                <span>
+                                    Design
+                                </span>
+                                <i data-lucide="chevron-down"></i>
+                            </button>
+                            <button class="button button-primary">
+                                View all
+                            </button>
+                        </div>
+                    </div>
+                    <div class="largest-courses-cart">
+                        <div class="course-cart">
+                            <div class="course-cart-top">
+                                <div class="course-cart__image">
+                                    <img src="/Assets/images/other/cart1.jpg" alt="Course image">
+                                </div>
+                                <div class="course-cart__statistics">
+                                    <div class="rating statistic">
+                                        <i data-lucide="star" class="icon"></i>
+                                        <span>(4,5) 120</span>
+                                    </div>
+                                    <div class="view statistic">
+                                        <i data-lucide="eye" class="icon"></i>
+                                        <span>12,000</span>
+                                    </div>
+                                    <div class="lesion statistic">
+                                        <i data-lucide="circle-play" class="icon"></i>
+                                        <span>36 lesion</span>
+                                    </div>
+
+                                </div>
+                            </div>
+                            <div class="course-cart-bottom">
+                                <div class="course-cart__title">
+                                    Everything You need to know About Business
+                                </div>
+                                <div class="course-cart__information">
+                                    <div class="author">
+                                        <img src="/Assets/images/other/avatar-author.jpg" alt="Avavta author"
+                                            width="100">
+                                        <span>Nicole Brow</span>
+                                    </div>
+                                    <div class="price">
+                                        <span class="old-price">$99.99</span>
+                                        <span class="current-price ">$48.57</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="course-cart">
+                            <div class="course-cart-top">
+                                <div class="course-cart__image">
+                                    <img src="/Assets/images/other/cart2.jpg" alt="Course image">
+                                </div>
+                                <div class="course-cart__statistics">
+                                    <div class="rating statistic">
+                                        <i data-lucide="star" class="icon"></i>
+                                        <span>(4,5) 120</span>
+                                    </div>
+                                    <div class="view statistic">
+                                        <i data-lucide="eye" class="icon"></i>
+                                        <span>12,000</span>
+                                    </div>
+                                    <div class="lesion statistic">
+                                        <i data-lucide="circle-play" class="icon"></i>
+                                        <span>36 lesion</span>
+                                    </div>
+
+                                </div>
+                            </div>
+                            <div class="course-cart-bottom">
+                                <div class="course-cart__title">
+                                    Everything You need to know About Business
+                                </div>
+                                <div class="course-cart__information">
+                                    <div class="author">
+                                        <img src="/Assets/images/other/avatar-author.jpg" alt="Avavta author"
+                                            width="100">
+                                        <span>Nicole Brow</span>
+                                    </div>
+                                    <div class="price">
+                                        <span class="old-price">$99.99</span>
+                                        <span class="current-price ">$48.57</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="course-cart">
+                            <div class="course-cart-top">
+                                <div class="course-cart__image">
+                                    <img src="/Assets/images/other/cart3.jpg" alt="Course image">
+                                </div>
+                                <div class="course-cart__statistics">
+                                    <div class="rating statistic">
+                                        <i data-lucide="star" class="icon"></i>
+                                        <span>(4,5) 120</span>
+                                    </div>
+                                    <div class="view statistic">
+                                        <i data-lucide="eye" class="icon"></i>
+                                        <span>12,000</span>
+                                    </div>
+                                    <div class="lesion statistic">
+                                        <i data-lucide="circle-play" class="icon"></i>
+                                        <span>36 lesion</span>
+                                    </div>
+
+                                </div>
+                            </div>
+                            <div class="course-cart-bottom">
+                                <div class="course-cart__title">
+                                    Everything You need to know About Business
+                                </div>
+                                <div class="course-cart__information">
+                                    <div class="author">
+                                        <img src="/Assets/images/other/avatar-author.jpg" alt="Avavta author"
+                                            width="100">
+                                        <span>Nicole Brow</span>
+                                    </div>
+                                    <div class="price">
+                                        <span class="old-price">$99.99</span>
+                                        <span class="current-price ">$48.57</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="slideshow-control">
+                        <button class="button slideshow-arrow prev disabled" onclick="moveSlides(-1)">
+                            <i data-lucide="arrow-left" class="icon"></i>
+                        </button>
+                        <div class="progres">
+
+                        </div>
+                        <button class="button slideshow-arrow next" onclick="moveSlides(1)">
+                            <i data-lucide="arrow-right" class="icon"></i></button>
+                    </div>
+                </div>
+            </section>
+
+        </main>
+
+        <footer class="footer">
+            <div class="container">
+                <div class="footer-top">
+                    <div class="footer-top-links">
+                        <div class="title">
+                            Company
+                        </div>
+                        <div class="links">
+                            <a href="#">About</a>
+                            <a href="#">Career</a>
+                            <a href="#">Blog</a>
+                            <a href="#">Press</a>
+                            <a href="#">Affiliates</a>
+                        </div>
+                    </div>
+                    <div class="footer-top-links">
+                        <div class="title">
+                            Community
+                        </div>
+                        <div class="links">
+                            <a href="#">About</a>
+                            <a href="#">Career</a>
+                            <a href="#">Blog</a>
+                            <a href="#">Press</a>
+                            <a href="#">Affiliates</a>
+                        </div>
+                    </div>
+                    <div class="footer-top-links">
+                        <div class="title">
+                            Teching
+                        </div>
+                        <div class="links">
+                            <a href="#">About</a>
+                            <a href="#">Career</a>
+                            <a href="#">Blog</a>
+                            <a href="#">Press</a>
+                            <a href="#">Affiliates</a>
+                        </div>
+                    </div>
+                    <div class="footer-top-links">
+                        <div class="title">
+                            Support
+                        </div>
+                        <div class="links">
+                            <a href="#">About</a>
+                            <a href="#">Career</a>
+                            <a href="#">Blog</a>
+                            <a href="#">Press</a>
+                            <a href="#">Affiliates</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="footer-bottom">
+                    <div>
+                        @ 2015-2020 Skillfy Education Private limited. All right resered
+                    </div>
+                    <div class="social-media">
+                        <i data-lucide="facebook"></i>
+                        <i data-lucide="twitter"></i>
+                        <i data-lucide="linkedin"></i>
+                        <i data-lucide="chrome"></i>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <script src="./Scripts/main.js"></script>
+    <script>
+        lucide.createIcons();
+    </script>
+</body>
+
+</html>

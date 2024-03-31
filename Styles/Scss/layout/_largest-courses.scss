@@ -1,0 +1,69 @@
+.largest-courses {
+    background-color: $blue-100;
+    padding: 60px 0;
+
+    & .container {
+        padding: 0;
+        overflow: hidden;
+    }
+
+    &-header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 40px;
+    }
+
+    &-cart {
+        width: 100%;
+        display: flex;
+        gap: 20px;
+        justify-content: flex-start;
+        align-items: center;
+        transition: transform 0.5s ease;
+
+        & .course-cart {
+            align-items: center;
+        }
+    }
+
+    & .slideshow-control {
+        margin-top: 40px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 10px;
+
+        & .disabled {
+            color: rgb(56, 56, 56) !important;
+
+        }
+
+        & .slideshow-arrow {
+            padding: 10px;
+            background-color: $white;
+            color: $orange-200;
+
+            & .icon {
+                stroke-width: 1.4px;
+
+            }
+        }
+
+        & .progres {
+            width: 100%;
+            height: 4px;
+            border-radius: 2px;
+            background-color: rgb(212, 212, 212);
+        }
+    }
+}
+
+@media (max-width: $xxxl) {
+    .largest-courses {
+        &-header {
+            flex-direction: column;
+            gap: 40px;
+        }
+    }
+}

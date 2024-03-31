@@ -1,0 +1,122 @@
+
+.course-cart {
+    width: 100%;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    border-radius: 8px;
+    cursor: pointer;
+    background-color: $white;
+
+    &-top {
+        padding: 15px;
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+        border-bottom: 1px solid rgb(185, 185, 185);
+    }
+
+    &__image {
+        width: 100%;
+
+        & img {
+            width: 100%;
+            border-radius: 4px;
+        }
+    }
+
+    &__statistics {
+        display: flex;
+        justify-content: space-between;
+        align-content: center;
+
+        & span {
+            color: $purple-500;
+            font-size: $text-sm;
+            font-weight: $font-normal;
+        }
+
+        & .rating {
+            & .icon {
+                color: rgb(255, 187, 0);
+            }
+        }
+
+        & .view {
+            & .icon {
+                color: #DD4A07;
+            }
+        }
+
+        & .lesion {
+            & .icon {
+                color: $green-200;
+            }
+        }
+
+    }
+
+    & .statistic {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 4px;
+        text-align: center;
+        font-weight: $font-medium;
+        font-size: $text-sm;
+    }
+
+    &-bottom {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+        gap: 20px;
+        padding: 25px 15px;
+
+    }
+
+    &__title {
+        color: $purple-500;
+        font-size: $text-xl;
+        font-weight: $font-medium;
+        line-height: 24px;
+    }
+
+    &__information {
+        display: flex;
+        width: 100%;
+        justify-content: space-between;
+        align-items: center;
+
+        & .price {
+            display: flex;
+            gap: 8px;
+            align-items: center;
+
+            & .old-price {
+                font-size: $text-sm;
+                color: #a3a3a3;
+                text-decoration: line-through;
+            }
+
+            & .current-price {
+                color: #F68D22;
+                font-weight: $font-bold;
+            }
+
+        }
+
+        & .author {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+
+            & img {
+                width: 40px;
+                height: 40px;
+                border-radius: 12px;
+                object-fit: cover;
+            }
+        }
+    }
+
+}
