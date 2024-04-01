@@ -1,0 +1,15 @@
+.deserve-with-skillfy{
+    padding: 60px 0;
+    & .container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 40px;
+        text-align: center;
+        & p {
+            font-weight: $font-normal;
+            line-height: 24px ;
+        }
+    }
+}

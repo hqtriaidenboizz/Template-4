@@ -19,7 +19,7 @@
         }
     }
 
-    &-cart {
+    &-card {
         display: grid;
         grid-template-columns: auto auto auto;
         gap: 20px;
@@ -33,7 +33,7 @@
             flex-direction: column;
             gap: 40px;
         }
-        &-cart {
+        &-card {
             grid-template-columns: auto auto;
         }
     }
@@ -45,7 +45,7 @@
             flex-direction: column;
             gap: 40px;
         }
-        &-cart {
+        &-card {
             grid-template-columns: auto;
         }
     }

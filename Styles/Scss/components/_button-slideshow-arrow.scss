@@ -1,0 +1,20 @@
+.slideshow-control {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    & .slideshow-arrow {
+        padding: 10px;
+        background-color: $white;
+        color: $orange-200;
+    
+        & .icon {
+            stroke-width: 1.4px;
+    
+        }
+    
+    }
+    & .disabled {
+        color: rgb(56, 56, 56) !important;
+    
+    }
+}

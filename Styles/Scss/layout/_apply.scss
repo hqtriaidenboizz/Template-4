@@ -1,0 +1,52 @@
+.apply{
+    padding: 60px 0;
+    & .container{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 40px;
+        padding-top: 60px;
+
+    }
+    & .apply-card{
+        display: flex;
+        gap: 20px;
+        align-items: flex-start;
+        padding: 40px 20px;
+        justify-content: space-between;
+        background-color: $purple-100;
+        &:last-child{
+            background-color: $brand-100;
+        }
+        & img {
+            width: 50px;
+            height: 50px;
+            border-radius: 100%;
+            object-fit: cover;
+        }
+        & .information{
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+            color: $purple-400;
+            & button {
+                align-self: self-start;
+            }
+            & .title{
+                font-weight: $font-medium;
+                font-size: $text-xl;
+            }
+            & .discription{
+                line-height: 24px;
+            }
+        }
+    }
+}
+
+@media (max-width: $xxxl){
+    .apply{
+        & .container{
+            flex-direction: column;
+        }
+    }
+}

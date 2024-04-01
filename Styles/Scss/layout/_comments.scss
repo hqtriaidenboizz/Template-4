@@ -1,0 +1,154 @@
+.comments {
+    background-color: $purple-100;
+    padding: 60px 0 120px 0;
+
+    & .container {
+        position: relative;
+    }
+
+    &-header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    & .slideshow-control {
+        gap: 20px;
+    }
+
+    & .comment-cards {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 20px;
+        padding: 60px 0;
+
+        & .comment-card {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+            background-color: $white;
+            padding: 20px;
+            border-radius: 8px;
+
+            & .discription {
+                line-height: 24px;
+
+                & span {
+                    color: $blue-300;
+                }
+            }
+
+            &-top {
+                display: flex;
+                justify-content: space-between;
+
+                & .information {
+                    display: flex;
+                    gap: 20px;
+
+                    & img {
+                        width: 40px;
+                        height: 40px;
+                        object-fit: cover;
+                        border-radius: 100%;
+                    }
+
+                    & .name-position {
+                        display: flex;
+                        flex-direction: column;
+                        gap: 4px;
+
+                        & .name {
+                            font-weight: $font-bold;
+                            color: $purple-500;
+                        }
+
+                        & .position {}
+
+                    }
+                }
+
+                & .twitter {
+                    width: 40px;
+                    height: 40px;
+                    color: $white;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    border-radius: 4px;
+                    background-color: $blue-300;
+                }
+
+            }
+        }
+    }
+
+    & .app-platform {
+        position: absolute;
+        bottom: -170px;
+        left: 0;
+        right: 0;
+        background-color: $purple-400;
+        display: flex;
+        justify-content: space-between;
+        padding: 60px;
+        align-items: center;
+        margin: 0 20px;
+
+        border-radius: 4px;
+
+        & h2 {
+            color: $white;
+        }
+
+        & .buttons {
+            display: flex;
+            gap: 40px;
+
+            & button {
+                display: flex;
+                gap: 15px;
+                justify-content: center;
+                flex-direction: row;
+                align-items: center;
+            }
+
+            & .button-secondly:hover {
+                background-color: $white;
+                color: $purple-400;
+
+            }
+            & .button-primary:hover {
+                background-color: $brand-300;
+                color: $white;
+
+            }
+            & img {
+                width: 24px;
+                color: white;
+            }
+        }
+    }
+}
+
+@media (max-width: $xxxl) {
+    .comments {
+        &-header {
+            flex-direction: column;
+            gap: 20px;
+        }
+
+        & .slideshow-control {
+            gap: 20px;
+        }
+        & .comment-cards{
+            flex-direction: column;
+        }
+        & .app-platform{
+            gap: 40px;
+            flex-direction: column;
+        }
+    }
+
+}
