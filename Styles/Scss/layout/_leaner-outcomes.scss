@@ -96,7 +96,7 @@
 
 }
 
-@media (max-width: $lg) {
+@media (max-width: $xl) {
     .learner-outcomes {
         &-left {
             & .outcome {
@@ -104,6 +104,9 @@
                     font-size: $text-sm;
                 }
             }
+        }
+        & .dot-right{
+            display: none;
         }
     }
 }

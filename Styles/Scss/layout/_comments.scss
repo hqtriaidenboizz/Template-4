@@ -17,9 +17,13 @@
     }
 
     & .comment-cards {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
+        display: grid;
+        grid-auto-flow: column;
+        grid-auto-columns: calc((100% / 3) - 15px);
+        overflow-x: auto;
+        scroll-snap-type: x mandatory;
+        scroll-behavior: smooth;
+        scrollbar-width: none;
         gap: 20px;
         padding: 60px 0;
 
@@ -86,7 +90,6 @@
 
     & .app-platform {
         position: absolute;
-        bottom: -170px;
         left: 0;
         right: 0;
         background-color: $purple-400;
@@ -119,11 +122,13 @@
                 color: $purple-400;
 
             }
+
             & .button-primary:hover {
                 background-color: $brand-300;
                 color: $white;
 
             }
+
             & img {
                 width: 24px;
                 color: white;
@@ -134,6 +139,7 @@
 
 @media (max-width: $xxxl) {
     .comments {
+        padding-bottom: 200px;
         &-header {
             flex-direction: column;
             gap: 20px;
@@ -142,13 +148,32 @@
         & .slideshow-control {
             gap: 20px;
         }
-        & .comment-cards{
-            flex-direction: column;
+
+        & .comment-cards {
+            grid-auto-columns: calc((100% / 2) - 15px);
+
         }
-        & .app-platform{
+
+        & .app-platform {
             gap: 40px;
             flex-direction: column;
         }
     }
 
+}
+
+@media (max-width: $xl) {
+    .comments {
+        padding-bottom: 260px;
+        & .comment-cards {
+            grid-auto-columns: 100%;
+
+        }
+        & .app-platform{
+            & .buttons {
+                flex-direction: column;
+                gap:20px;
+            }
+        }
+    }
 }

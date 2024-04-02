@@ -542,6 +542,9 @@ body {
     font-size: 18px;
     line-height: 32px;
   }
+  .introduction .dot-circle-right {
+    display: none;
+  }
 }
 @media (max-width: 640px) {
   .introduction-left h1 {
@@ -713,9 +716,12 @@ body {
     max-width: 100%;
   }
 }
-@media (max-width: 640px) {
+@media (max-width: 768px) {
   .learner-outcomes-left .outcome p {
     font-size: 14px;
+  }
+  .learner-outcomes .dot-right {
+    display: none;
   }
 }
 .courses {
@@ -772,14 +778,18 @@ body {
   justify-content: space-between;
   align-items: center;
   margin-bottom: 40px;
+  text-align: center;
 }
 .largest-courses-card {
-  width: 100%;
-  display: flex;
+  display: grid;
+  grid-auto-flow: column;
+  grid-auto-columns: calc(33.3333333333% - 15px);
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
   gap: 20px;
-  justify-content: flex-start;
-  align-items: center;
-  transition: transform 0.5s ease;
+  border-radius: 8px;
+  scroll-behavior: smooth;
+  scrollbar-width: none;
 }
 .largest-courses-card .course-card {
   align-items: center;
@@ -802,7 +812,12 @@ body {
     gap: 40px;
   }
   .largest-courses-card {
-    flex-direction: column;
+    grid-auto-columns: calc(50% - 15px);
+  }
+}
+@media (max-width: 768px) {
+  .largest-courses-card {
+    grid-auto-columns: 100%;
   }
 }
 .learn-leading {
@@ -944,9 +959,13 @@ body {
   gap: 20px;
 }
 .comments .comment-cards {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+  display: grid;
+  grid-auto-flow: column;
+  grid-auto-columns: calc(33.3333333333% - 15px);
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  scroll-behavior: smooth;
+  scrollbar-width: none;
   gap: 20px;
   padding: 60px 0;
 }
@@ -999,7 +1018,6 @@ body {
 }
 .comments .app-platform {
   position: absolute;
-  bottom: -170px;
   left: 0;
   right: 0;
   background-color: #5F5881;
@@ -1038,6 +1056,9 @@ body {
 }
 
 @media (max-width: 1280px) {
+  .comments {
+    padding-bottom: 200px;
+  }
   .comments-header {
     flex-direction: column;
     gap: 20px;
@@ -1046,11 +1067,23 @@ body {
     gap: 20px;
   }
   .comments .comment-cards {
-    flex-direction: column;
+    grid-auto-columns: calc(50% - 15px);
   }
   .comments .app-platform {
     gap: 40px;
     flex-direction: column;
+  }
+}
+@media (max-width: 768px) {
+  .comments {
+    padding-bottom: 260px;
+  }
+  .comments .comment-cards {
+    grid-auto-columns: 100%;
+  }
+  .comments .app-platform .buttons {
+    flex-direction: column;
+    gap: 20px;
   }
 }
 .footer {
@@ -1083,6 +1116,7 @@ body {
   padding: 20px 0;
   text-align: center;
   color: #777777;
+  line-height: 24px;
 }
 .footer-bottom .social-media {
   display: flex;
